@@ -52,7 +52,7 @@ class MLAlgorithmStatus(models.Model):
 	created_at: The date of status creation.
 	parent_mlalgorithm: The reference to corresponding MLAlgorithm.
    '''
-   satus = models.CharField(max_length = 128)
+   status = models.CharField(max_length = 128)
    active = models.BooleanField()
    created_by = models.CharField(max_length = 128)
    created_at = models.DateTimeField(auto_now_add=True, blank=True)
